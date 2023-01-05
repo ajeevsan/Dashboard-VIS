@@ -1,0 +1,42 @@
+<div class="main_container">
+    <div class="header">
+        <img src="./assets/nav.png" id="nav_icon" alt="">
+        <img id="logo" src="./assets/logo.png" alt="Deevia Logo" srcset="">
+        <h1 class="heading">Live Dashboard</h1>
+    </div>
+    <div class="charts_container">
+        <div class="pie_charts_container">
+            <div id="pi_chart_1" class="pi_chart">
+                <div class="vehicle_title">TOTAL INSPECTION</div>
+                <div echarts [options]="option1" ></div>               
+            </div>
+            <div id="pi_chart_2" class="pi_chart" >
+                <div class="vehicle_title">INNOVA</div>
+                <div echarts [options]="option2"  ></div>               
+            </div>
+            <div id="pi_chart_3" class="pi_chart">
+                <div class="vehicle_title">FORTUNER</div>
+                <div echarts [options]="option3" ></div>
+            </div>
+        </div>
+        <div class="detail_container">
+            <div class="container">
+                <div class="content">
+                    Total Vehicle : 200
+                </div>
+            </div>
+            <div class="container">
+                <div class="content">
+                    Total Checks : 200
+                </div>
+            </div>
+            <div class="container">
+                <div class="content">
+                    Avg Check Time : 90s
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
